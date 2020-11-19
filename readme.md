@@ -6,6 +6,7 @@ I did not use any third party library.
 Python backend is built directly on socket.  
 Frontend is a JS-HTML spaghetti mess.  
 My friend saw me and was like "Use React PLEASE"  
+
 This is my personal first web app.  
 
 ## Highlight
