@@ -8,7 +8,7 @@ from myhttp import *
 from queue import Empty
 from time import sleep, time
 from mythread import Safe
-from console import console
+# from console import console
 IP = '10.209.0.218'
 MAX_HEARTDEAD = 1
 
@@ -145,7 +145,7 @@ def restart():
     start()
 
 start()
-console(globals())
+# console(globals())
 server.close()
 sleep(1)
 print('done')
