@@ -1,0 +1,17 @@
+'''
+LOG everything
+'''
+GUI:
+  Warning: No encryption. don't type anything private.
+  ChatBox
+Protocol:
+  C to S:
+    pull: POST /pull name
+    push: POST /push name ...
+    leak: POST /leak name peeked
+  S to C:
+    QUIET|userlist: no new msg
+    MSG__: New msg(s)
+    HELLO|user| : New user entered
+    BYE__|user| : User exited
+    PEEK_: Peek

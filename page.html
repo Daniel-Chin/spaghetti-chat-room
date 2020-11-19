@@ -1,0 +1,63 @@
+<html>
+<style>
+.button {
+    background-color: #BBBBBB;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-width: 10;
+}
+.input {
+    background-color: #000000;
+    color: white;
+    font-family: "courier";
+    font-size: 25;
+    text-align: left;
+}
+.name {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-family: "Times";
+    font-size: 30;
+    display:block;
+}
+</style>
+<head>
+  <title>Chat Room</title>
+</head>
+<body style="background-color:black;">
+<font color = "white">
+<div id="warning" align="center">
+    <p>This app is a project for Computer Networking. </p>
+    <p><font size=7>Warning: </font></p>
+    <p>No encryption is used here. <br>
+Do not send, or even TYPE any sensitive info! </p>
+    <button style="height:80px;width:300px" onclick="enter();" class="button">
+        <font size=6>Enter Chat</font></button>
+    <p>Written by Daniel Chin</p>
+</div>
+<div id="naming" style="display:none;" align="center">
+    <p>Please set your nickname: less than 12 characters </p>
+    <input class="name" type="text" id="nameBox" maxlength="12"/><br>
+    <button style="height:60px;width:100px; display:block" onclick="nameMe();" class="button">
+        <font size=5>Go</font></button>
+    <script>
+    function getName() {
+        return document.getElementById("nameBox").value;
+    }
+    </script>
+</div>
+<div id="history" style="font-family:courier;font-size:25;">
+</div>
+<table style="width:100%; font-family:courier;">
+    <th id="my_name" style="width:1%; color:white; font-family:courier; font-weight:normal;font-size:25;"></th>
+    <th>
+        <input class="input" autofocus id="type_box" onkeyup="maybeEnter(event);" type="text" style="width:100%; display:none;" />
+    </th>
+</table>
+<div id="below" style="font-family:courier;">
+</div>
+</font>
+</body>
+</html>
